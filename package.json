@@ -1,0 +1,33 @@
+{
+  "name": "webpack-v",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --config webpack.config.js --open --hot",
+    "demo1": "webpack-dev-server --progress --config src/demo01/webpack.config.js --hot",
+    "demo2": "webpack-dev-server --progress --config src/demo02/webpack.config.js --hot",
+    "demo3": "webpack-dev-server --progress --config src/demo03/webpack.config.js --hot",
+    "demo4": "webpack-dev-server --progress --config src/demo04/webpack.config.js --hot",
+    "demo5": "webpack-dev-server --progress --config src/demo05/webpack.config.js --hot",
+    "demo6": "webpack-dev-server --progress --config src/demo06/webpack.config.js --hot"
+  },
+  "author": "frace",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-router": "^3.3.4",
+    "webpack-merge": "^5.9.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "0.13.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
