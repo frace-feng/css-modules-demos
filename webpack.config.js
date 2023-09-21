@@ -5,12 +5,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-
   entry: "./src/index.js",
-
   output: {
     path: path.join(__dirname, "dist"),
-
     filename: "bundle.js",
   },
 
@@ -18,6 +15,21 @@ module.exports = {
     rules: [
 
       { test: /\.vue$/, use: ["vue-loader"] },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                auto: true,
+                localIdentName:'[path][name]---[local]---[hash:base64:5]'
+              },
+            }
+          }
+        ],
+      },
     ],
   },
 
