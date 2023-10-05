@@ -1,6 +1,7 @@
 # css-modules-demos
 
-webpack+vue写css-modules例子
+webpack+vue实现css-modules
+使用在 微前端css隔离
 
 ## 局部作用域-demo01
 
